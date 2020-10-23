@@ -2,32 +2,25 @@ import 'package:flutter/material.dart';
 
 class ContentPage extends StatelessWidget {
   Map<String, String> names = {
-    '01': 'Virus',
-    '02': 'Perkembangan covid19',
-    '03': 'Bersama lawan covid19',
-    '04': 'Pasien',
-    '05': 'Tes swab',
-    '06': 'Vaksin',
-    '07': 'Protokol kesehatan',
-    '08': 'Alat',
-    '09': 'Doctor',
-    '10': 'friday prayers'
+    '01': 'Mocca coklat',
+    '02': 'Purple',
+    '03': 'Redvelvet',
+    '04': 'Jeruk',
+    '05': 'Dark coklat',
+    '06': 'Vanila latte',
+    
   };
   Map<String, String> desc = {
     '01':
-        '''  Ini adalah gambaran bentuk dari covid19. ''',
-    '02': ''' perkembangan covid19 di indonesia update 09 oktober pukul 12.00 wib di 34 provinsi. ''',
+        '''  Puding 18 adalah surganya puding aneka rasa dan bentuk ada di puding 18 salah satungnya varian rasa mocca coklat dan lain lainnya puding mocca coklat di bandrol harga RP 20.000 kalian bisa kunjungi kami di cafe puding 18 jakarta DKI jakarta . ''',
+    '02': ''' Puding 18 juga mempunyai puding purple dengan rasa mix bluberry dan vanila yang lagi viral di dunia maya dan selalu sold out dengan di bandrol harga RP 25.000 . ''',
     '03':
-        ''' Ilmuan akhirnya temukan cara sistem kekebalan tubuh. ''',
-    '04': ''' Ini adalah gambar pasien yang terkena gejala covid19.  ''',
+        ''' Puding 18 juga mempunyai puding favorite yang sangang di sukai oleh anak milenial tak kalah dengan puding purple puding redvelvet juga selalu sold out dengan di bandrol harga RP 25.OOO. ''',
+    '04': ''' Puding 18, puding jeruk dengan perasan jeruk asli dan di mix rasa vanilla menciptakan rasa yang segar dan manis dengan di bandrol harga RP 20.000.  ''',
     '05':
-        ''' Tes swab di lakukan drive thru. ''',
-    '06': ''' Kabar baik untuk kita semua vaksin ilmiah telah di temukan untuk covid 19. ''',
-    '07': ''' Agar masyarakat tahu protokol kesehatan untuk mencegah covid19. ''',
-    '08': ''' Alat rapid test. ''',
-    '09':
-        '''  Para pahlawan garis terdepan ''',
-    '10': ''' Muslim in indonesia divided over friday prayers amid corovirus fears '''
+        ''' Puding dark coklat tak kalah dari punding purple dan puding redvelvet puding dark coklat juga sangat di gemari dengan karena rasanya yang tidak terlalu manis menjadi tambah daya tariknya RP 30.000. ''',
+    '06': ''' Puding Vanila latte puding rasa vanila latte dengan rasa lattte yang kuat menjadi daya tarik puding itu sendiri di bandrol dengan harga RP 30.000. ''',
+    
   };
 
   final String value;
@@ -38,10 +31,10 @@ class ContentPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Berita'),
+        title: Text('Detail puding'),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.share),
+            icon: Icon(Icons.apps),
             onPressed: () {},
           ),
           IconButton(
@@ -73,7 +66,7 @@ class ContentPage extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 25.0, fontWeight: FontWeight.bold)),
                       Text(
-                        'Jakarta, DKI Jakarta',
+                        'Puding 18 Jakarta, DKI Jakarta',
                         style: TextStyle(
                           color: Colors.grey,
                           fontSize: 10.0,

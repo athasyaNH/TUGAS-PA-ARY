@@ -15,17 +15,33 @@ class HomeState extends State<Home> {
     '04',
     '05',
     '06',
-    '07',
-    '08',
-    '09',
-    '10'
+
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CORONA VIRUS'),
+        title: Text('PUDING 18'),
+          titleSpacing: 120.0,
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            ListTile(
+              title: Text('login'),
+              leading: IconButton(
+                icon:Icon(Icons.input)
+              ),
+            ),
+            ListTile(
+              title: Text('Singup'),
+              leading: IconButton(
+                icon:Icon(Icons.supervised_user_circle)
+              ),
+            )
+          ]
+        ),
       ),
       body: GridView.count(
         crossAxisCount: 3,
